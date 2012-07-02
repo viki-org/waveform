@@ -9,7 +9,7 @@ end
 
 class Waveform
   
-  VERSION = "0.0.4
+  VERSION = "0.0.4"
   DefaultOptions = {
     :method => :peak,
     :width => 1800,
