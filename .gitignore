@@ -7,3 +7,5 @@ vagrant/*
 *.png
 test/output/*
 .DS_Store
+.idea/**
+.rvmrc

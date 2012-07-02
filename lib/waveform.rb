@@ -8,8 +8,8 @@ rescue LoadError
 end
 
 class Waveform
-  VERSION = "0.0.3"
   
+  VERSION = "0.0.4
   DefaultOptions = {
     :method => :peak,
     :width => 1800,
@@ -151,9 +151,10 @@ class Waveform
       # negative amplitude
       zero = options[:height] / 2.0
       
+      max_amplitude = samples.max
       samples.each_with_index do |sample, x|
         # Half the amplitude goes above zero, half below
-        amplitude = sample * options[:height].to_f / 2.0
+        amplitude = (sample/max_amplitude) * options[:height].to_f / 2.0
         # If you give ChunkyPNG floats for pixel positions all sorts of things
         # go haywire.
         image.line(x, (zero - amplitude).round, x, (zero + amplitude).round, color)
