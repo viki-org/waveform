@@ -1,3 +1,8 @@
+Originally from  benalavi/waveform
+Latest commit ecd684e  on 2 Jul 2012
+@CueRehearse
+CueRehearse Fix bug
+
 Waveform
 ========
 
